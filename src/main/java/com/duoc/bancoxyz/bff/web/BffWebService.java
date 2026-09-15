@@ -30,7 +30,7 @@ import lombok.RequiredArgsConstructor;
  * Canal Web: vista completa para escritorio/backoffice.
  * Reutiliza los agregadores (llamadas paralelas al backend) y agrega
  * resumenes, agrupaciones por tipo de cuenta/movimiento y el historial
- * completo con descripcion.
+ * completo con descripcion. 
  */
 @Service
 @RequiredArgsConstructor
