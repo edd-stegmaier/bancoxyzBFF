@@ -1,16 +1,9 @@
 # bancoxyzBFF
 
-Backend for Frontend unificado de BancoXYZ. Un solo deployable expone tres
-contratos distintos (`/api/cajero`, `/api/movil` y `/api/web`) que adaptan la
-informacion de [bancoxyzBackend](https://github.com/edd-stegmaier/bancoxyzBackend)
-a las necesidades de cada canal.
+Backend for Frontend unificado de BancoXYZ.
 
-El diseno sigue la plantilla
-[Semana5-BFF-RutaExpress-Agregador](https://github.com/edd-stegmaier/Semana5-BFF-RutaExpress-Agregador):
-clientes HTTP hacia el backend, agregadores con llamadas en paralelo y
-transformaciones por canal. La diferencia es que RutaExpress consume dos
-microservicios (`ms-cuentas` + `ms-movimientos`); aca el origen es un solo
-backend con tres recursos (`/api/clientes`, `/api/cuentas`, `/api/transacciones`).
+El diseño utiliza clientes HTTP hacia el backend, agregadores con llamadas en paralelo y
+transformaciones por canal. El BFF consume un solo backend con tres recursos (`/api/clientes`, `/api/cuentas`, `/api/transacciones`).
 
 ## Requisitos
 
