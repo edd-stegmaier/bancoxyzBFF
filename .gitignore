@@ -7,3 +7,6 @@ target/
 .factorypath
 .vscode
 *.class
+
+./docs
+*.dev.md
